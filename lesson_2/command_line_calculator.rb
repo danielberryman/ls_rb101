@@ -44,14 +44,21 @@ loop do
 end
 
 loop do
-  puts 'Choose an action by typing one of the following: add; subtract; multiply; divide.'
+  action_msg = <<-str
+    'Choose an action by typing one of the following:
+    add
+    subtract
+    multiply
+    divide.'
+  str
+  puts action_msg
   action = Kernel.gets().chomp()
   case action
   when 'add' then puts add(@num1, @num2)
   when 'subtract' then puts subtract(@num1, @num2)
   when 'multiply' then puts multiply(@num1, @num2)
   when 'divide' then puts divide(@num1, @num2)
-  else 
+  else
     puts "Please type one of the actions exactly with no spaces on either side."
     next
   end
