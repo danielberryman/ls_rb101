@@ -1,6 +1,5 @@
 # write a program that asks for 2 numbers
 # then asks for a method: add, subtract, multiply or divide
-# output the result
 
 def add(num1, num2)
   num1 + num2
