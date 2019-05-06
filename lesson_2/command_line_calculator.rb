@@ -15,9 +15,10 @@ def multiply(num1, num2)
 end
 
 def divide(num1, num2)
-  t = num1 / num2
-  rm = num1 % num2
-  puts "#{num2} goes into #{num1} #{t} times with a remainder of #{rm}"
+  num1.to_f / num2.to_f
+  # t = num1 / num2
+  # rm = num1 % num2
+  # puts "#{num2} goes into #{num1} #{t} times with a remainder of #{rm}"
 end
 
 loop do
@@ -32,7 +33,7 @@ loop do
 end
 
 loop do
-  puts 'Enter a number:'
+  puts 'Enter another number:'
   @num2 = Kernel.gets().chomp()
   @num2 = @num2.to_i
   if @num2.class != Integer
